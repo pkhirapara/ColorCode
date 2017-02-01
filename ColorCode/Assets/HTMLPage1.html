@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="prettify.css" />
+    <script src="prettify.js"></script>
+    <script>
+        window.onload = (function () { prettyPrint(); });
+        function showCode(code) {
+
+            //change content of pre tag with the passed code
+
+            var x = document.getElementsByTagName('pre');
+            x[0].textContent = code.replace(/<lb>/g,"\r\n");
+            x[0].classList.remove("prettyprinted");
+          
+
+            //call prettyPrint()
+            prettyPrint();
+
+        }
+
+    </script>
+</head>
+<body>
+    <pre class="prettyprint">
+    </pre>
+</body>
+</html>
